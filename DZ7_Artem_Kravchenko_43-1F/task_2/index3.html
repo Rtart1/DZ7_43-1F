@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Светофор</title>
+  </head>
+  <body>
+    <div class="revies">
+      <div class="container">
+        <div id="revies_blok">
+          <h1>Выберите цвет светофора</h1>
+          <select id="traffic_light" onchange="changeColor()">
+            <option value="red">Красный</option>
+            <option value="yellow">Желтый</option>
+            <option value="green">Зеленый</option>
+          </select>
+          <br />
+          <button onclick="colorSubmit()">Отправить</button>
+        </div>
+        <p class="message" id="message"></p>
+      </div>
+    </div>
+
+    <div class="traffic">
+      <div class="traffic_lights">
+        <div class="traffic_lights_color" id="red_light"></div>
+        <div class="traffic_lights_color" id="yellow_light"></div>
+        <div class="traffic_lights_color" id="green_light"></div>
+      </div>
+    </div>
+
+    <script src="main3.js"></script>
+  </body>
+</html>
